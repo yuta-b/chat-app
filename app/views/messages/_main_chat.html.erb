@@ -12,28 +12,7 @@
 </div>
 
 <div class="messages">
-  <div class="users">
-    <div class="name">
-      YUTA
-    </div>
-    <div class="date">
-      2022/2/9(TUE) 12:02
-    </div>
-  </div>
-  <div class="comment">
-    今日も頑張るぞ
-  </div>
-  <div class="users">
-    <div class="name">
-      YUTA
-    </div>
-    <div class="date">
-      2022/2/9(TUE) 12:02
-    </div>
-  </div>
-  <div class="comment">
-    まずは目指せ月収５万円
-  </div>
+  <%= render partial: 'message', collection: @messages %>
 </div>
 
 <%= form_with model: [@room, @message], class: 'form', local: true do |f| %>
